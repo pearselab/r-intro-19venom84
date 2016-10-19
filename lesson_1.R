@@ -9,6 +9,34 @@ c(c(1,2,3), c(4,5,6))
 #     - they need to be of the same type, though!
 c(1,2, "three")
 
+# cat - concatenate and print
+# prints output to a file or the screen
+x <- c(1,2,3)
+y <- c(7,8,9)
+cat(x,y)
+# output is list of 1 2 3 5 6 7
+
+# cbind - uses a sequence that contains vector, matrix, or data-frame and combines it
+#         by columns or rows - in that order - (rbind is in different orientation)
+cbind(x,y)
+# output is in columns as below
+#      x y
+# [1,] 1 5
+# [2,] 2 6
+# [3,] 3 7
+# adding a third vector
+z <- c(10,11,12)
+cbind(x,y,z)
+# output now is in columns like this:
+#      x y z
+# [1,] 1 5 10
+# [2,] 2 6 11
+# [3,] 3 7 12
+
+# col - column indexes
+# gives a matrix of integers that indicates the column number in a matrix
+
+
 ################################################
 ## Bonus exercises #############################
 ################################################
